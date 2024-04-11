@@ -68,4 +68,8 @@ public class EnderecoService implements ServiceDTO<Endereco, EnderecoRequest, En
     public List<Endereco> findByCep(String cep) {
         return repo.findByCep( cep );
     }
+
+    public List<Endereco> findByPessoaId(Long idPessoa) {
+        return repo.findByPessoaId( idPessoa );
+    }
 }
