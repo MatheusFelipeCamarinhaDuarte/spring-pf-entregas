@@ -111,7 +111,7 @@ Alterar o arquivo contido em  **documentacao/equipe.txt** para incluir os RMs e 
 
 
 
-## 3. **(6 Ponto)**  A perfeita criação dos Seguintes Resources no pacote resources
+## 3. **(6 Ponto)**  A perfeita criação dos Seguintes Resources no pacote resource
 
 
     1. **(1 Ponto)** **PessoaResource** com as seguintes ROTAS e VERBOS:
@@ -176,7 +176,8 @@ Para acessar digite no prompt:
 git clone https://github.com/Benefrancis/spring-pf-entregas && cd spring-pf-entregas && git checkout correcao
 ```
 
-A avaliação é em dupla.
+A atividade é em **DUPLA**, não se esqueça de colocar o nome dos integrantes no arquivo contido em documentacao/equipe.txt. Em caso de fraude de qualquer tipo, todos os envolvidos receberão nota ZERO.
+
 
 
 Boa avaliação.

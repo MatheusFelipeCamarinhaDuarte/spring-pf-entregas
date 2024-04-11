@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "d7adf59e-6e2a-4e23-951f-9df420adfce5",
+		"name": "🚚 🤓👍🏾ENTREGAS BENEZINHO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1524675"
+	},
+	"item": [
+		{
+			"name": "PESSOA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/pessoa",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/pessoa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Benefrancis do Nascimento\",\r\n    \"email\": \"benefrancis@gmail.com\",\r\n    \"nascimento\": \"1977-03-08\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/pessoa",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/produto",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n  \"nome\": \"Iphone 15\",\r\n  \"etiqueta\": \"IP-2024-kjhasçdflkhasdçjhfçjkasdhçjk\",\r\n  \"peso\": 0.5,\r\n  \"altura\": 15,\r\n  \"largura\": 2,\r\n  \"profundidade\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/produto",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produto/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/produto/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/endereco",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/endereco/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"endereco",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/endereco",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cep\": \"06086-120\",\r\n    \"numero\": \"505\",\r\n    \"complemento\": \"AP 81\",\r\n    \"pessoa\": {\r\n        \"nome\": \"Bruno Sudré do Nascimento\",\r\n        \"nascimento\": \"2000-05-15\",\r\n        \"email\": \"bruninhosudre@gmail.com\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/endereco",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"endereco"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
