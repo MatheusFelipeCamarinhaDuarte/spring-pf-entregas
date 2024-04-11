@@ -30,7 +30,6 @@ public class EnderecoResource {
     @Autowired
     private PessoaService pessoaService;
 
-
     @GetMapping
     public Collection<EnderecoResponse> findAll() {
         var entity = service.findAll();
@@ -49,7 +48,6 @@ public class EnderecoResource {
 
         if (Objects.nonNull(pessoa)) entity.setPessoa(pessoa);
 
-
         Endereco save = service.save(entity);
 
         URI uri = ServletUriComponentsBuilder
@@ -64,12 +62,16 @@ public class EnderecoResource {
     }
 
     @GetMapping(value = "/cep/{cep}")
-    public List<Endereco> findByCep(@PathVariable String cep) {
-        return service.findByCep(cep);
+    public List<EnderecoResponse> findByCep(@PathVariable String cep) {
+        var entity = service.findByCep(cep);
+
+
+
+        return  entity.stream().map( service::toResponse ).toList();
     }
 
     @GetMapping(value = "/pessoa/{idPessoa}")
-    public List<Endereco> findByPessoaId(@PathVariable Long idPessoa) {
+    public List<EnderecoResponse> findByPessoaId(@PathVariable Long idPessoa) {
         return service.findByPessoaId(idPessoa);
     }
 
